@@ -1,0 +1,19 @@
+[package]
+name = "multi-feature-check"
+version = "0.1.0"
+description = "A tool to cargo check a project with multiple features combinations"
+edition = "2021"
+
+
+[features]
+default = [ "feature1", "feature2" ]
+feature1 = []
+feature2 = []
+feature3 = [ "feature1" ]
+
+[dependencies]
+indicatif = "0.17.8"
+tokio = { version = "1.38.1", features = ["sync", "rt", "rt-multi-thread", "macros"] }
+tempfile = "3.10.1"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8.17"

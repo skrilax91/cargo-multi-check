@@ -1,0 +1,39 @@
+[global]
+concurrency = 5
+clean = false
+clear_terminal = true
+
+
+[features]
+# Test the following features
+rabbit_mq = { strict = true }
+rabbit_rpc = { strict = true }
+quic = { strict = true }
+plan = { strict = false }
+backup_file_plan = { strict = false }
+restoration_file_plan = { strict = false }
+backup_image_plan = { strict = false }
+restoration_image_plan = { strict = false }
+backup = { strict = false }
+backupv2 = { strict = false }
+restoration = { strict = false }
+restorationv2 = { strict = false }
+scheduling = { strict = false }
+schedulingv2 = { strict = false }
+quic_calls = { strict = false }
+paths = { strict = false }
+storage = { strict = false }
+status = { strict = false }
+task = { strict = false }
+agent = { strict = false }
+timestamps = { strict = false }
+storage_provider = { strict = false }
+storage_account = { strict = false }
+bucket = { strict = false }
+repository = { strict = false }
+passphrase = { strict = false }
+openapi-schema = { strict = false }
+vault = { strict = false }
+restic = { strict = false }
+restic-command = { strict = false }
+snouffle = { strict = false }
